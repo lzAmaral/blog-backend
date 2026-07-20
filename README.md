@@ -92,6 +92,14 @@ Para criar/editar artigos com imagem, envie `multipart/form-data` com os campos 
 - Ao substituir a imagem de banner ou remover um artigo, o arquivo antigo é apagado do disco automaticamente.
 - Senhas nunca são retornadas nas respostas da API.
 
+## Testes
+
+O projeto conta com testes unitários (usando o test runner nativo do Node.js) para os validadores em `src/utils/validators.ts`. Para rodá-los:
+
+```bash
+npm test
+```
+
 ## Imagens
 
 As imagens de banner são salvas em `uploads/banners` e servidas estaticamente em `/uploads/banners/<arquivo>`. Essa pasta é ignorada pelo Git (exceto `.gitkeep`), então garanta que ela exista ao clonar o projeto.
