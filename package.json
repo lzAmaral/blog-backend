@@ -7,7 +7,8 @@
     "dev": "nodemon --watch src -e ts --exec ts-node src/server.ts",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
-    "lint": "eslint src --ext .ts"
+    "lint": "eslint src --ext .ts",
+    "test": "node --require ts-node/register --test tests/**/*.test.ts"
   },
   "keywords": ["blog", "api", "express", "mysql"],
   "license": "MIT",
